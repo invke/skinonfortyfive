@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
+  get 'home/index'
+
+  get 'about/index'
+
+  get 'about/team'
+
   get 'varicose_veins/index'
 
   get 'varicose_veins/laser'
