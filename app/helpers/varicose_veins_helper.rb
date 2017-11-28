@@ -1,0 +1,2 @@
+module VaricoseVeinsHelper
+end
