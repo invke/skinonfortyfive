@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'home#index'
 
   get 'home/index'
@@ -6,6 +7,8 @@ Rails.application.routes.draw do
   get 'about/index'
 
   get 'about/team'
+
+  get 'contact/index'
 
   get 'varicose_veins/index'
 
