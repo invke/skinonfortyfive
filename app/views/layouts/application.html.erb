@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
 
   <!-- Google Analytics script inclusion -->
   <script>
@@ -40,10 +41,16 @@
 
 </head>
 
-<body class="body">
+<body class="body controller--<%= params[:controller] %>">
 <div class="body__background-overlay"></div>
 <div class="body__content">
+
+  <!-- Render the header -->
+  <%= render partial: 'shared/header' %>
+
+  <!-- Render the page -->
   <%= yield %>
+
 </div>
 <div class="body__foreground-overlay"></div>
 </body>

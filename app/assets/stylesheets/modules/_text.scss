@@ -4,14 +4,18 @@
 @import "base";
 
 // Font families
-$text__family--sans: 'Lato', 'Helvetica Neue', Sans-Serif;
+$text__family--sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 $text__family--cursive: 'Bad Script', Cursive;
-$text__family--times: 'Times New Roman', Georgia, Serif;
-$text__family--clear: 'Montserrat', 'Helvetica Neue', Sans-Serif;
+$text__family--times: 'Quattrocento', 'Times New Roman', Georgia, Serif;
+$text__family--clear: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
 // Text elements
 p, span {
+  font-family: $text__family--clear;
+}
 
+a {
+  font-family: $text__family--times;
 }
 
 // Headings

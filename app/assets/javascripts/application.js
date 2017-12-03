@@ -15,3 +15,12 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require_tree .
+
+/**
+ * Header & nav behaviour
+ */
+$(document).ready(function () {
+    $("#header__mobile-menu-toggle").click(function () {
+        $(".header__nav-wrapper").toggleClass("collapsed");
+    });
+});

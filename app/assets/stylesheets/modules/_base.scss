@@ -11,4 +11,24 @@ $color__secondary: #333 !default;
 
 $color__accent--navy: #000c3a !default;
 
+// Dimension vars
+$size__width--xs: 576px; // lt
+$size__width--sm: 576px; // gte
+$size__width--md: 768px; // gte
+$size__width--lg: 992px; // gte
+$size__width--xl: 1200px; // gte
+
+
 // Global style vars
+.body {
+  height: 100%;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+}
