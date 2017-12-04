@@ -1,3 +1,126 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "modules/base";
+@import "modules/text";
+
+$section__taranaki--height: 400px;
+$section__welcome--height: 70px;
+
+$carousel--width: 800px;
+$carousel--height: 500px;
+
+.section {
+
+  &--taranaki {
+    width: calc(100% + 30px);
+    height: $section__taranaki--height;
+    margin: 0 -15px 10px -15px;
+    padding: 0 15px; // min 15px
+    background-image: image_url('backgrounds/taranaki-coast.jpg');
+    background-size: cover;
+    background-position: 50% 80%;
+  }
+
+  &--welcome {
+    padding-top: 15px;
+    height: $section__welcome--height;
+    border-bottom: 1px solid $color__accent--navy;
+  }
+
+  &--intro-n-marketing {
+  }
+}
+
+.welcome {
+  &__greeting {
+    font-size: 28px;
+    font-family: $text__family--cursive;
+    color: $color__accent--navy;
+  }
+
+  &__contact-us {
+    font-size: 18px;
+    font-family: $text__family--sans;
+    color: $color__accent--navy;
+  }
+
+  &__contact-phone {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: $text__family--sans;
+    color: $color__accent--navy;
+    padding-left: 10px;
+  }
+}
+
+.intro {
+  width: calc(100% - #{$carousel--width});
+  float: left;
+  padding-top: 15px;
+}
+
+.treatments-carousel {
+  float: right;
+  width: $carousel--width;
+  height: $carousel--height;
+  border-left: 1px solid $color__accent--navy;
+
+  & .carousel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    & .carousel-inner {
+      height: 100%;
+      width: 100%;
+
+      & .item {
+        height: 100%;
+        width: 100%;
+        & img {
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    &:hover {
+      & .carousel-control span {
+        display: block;
+      }
+    }
+
+    & .carousel-control {
+      & span {
+        top: calc(50% - 30px);
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        color: $color__accent--navy;
+        background-color: #fff;
+        text-shadow: none;
+        display: none;
+      }
+
+      &.left {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
+
+        & span {
+          left: 10px;
+        }
+      }
+
+      &.right {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+
+        & span {
+          right: 10px;
+        }
+      }
+    }
+
+    & .carousel-indicators {
+      & li {
+        border-radius: 0;
+      }
+    }
+  }
+}
