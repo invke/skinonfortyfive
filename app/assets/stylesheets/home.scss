@@ -38,14 +38,14 @@ $carousel--height: 500px;
 
   &__contact-us {
     font-size: 18px;
-    font-family: $text__family--sans;
+    font-family: $text__family--clear;
     color: $color__accent--navy;
   }
 
   &__contact-phone {
     font-size: 32px;
     font-weight: bold;
-    font-family: $text__family--sans;
+    font-family: $text__family--times;
     color: $color__accent--navy;
     padding-left: 10px;
   }
@@ -122,5 +122,23 @@ $carousel--height: 500px;
         border-radius: 0;
       }
     }
+  }
+}
+
+.facebook {
+  margin-right: 10px;
+
+  & span {
+    font-size: 30px;
+    color: $color__accent--navy;
+  }
+}
+
+.instagram {
+  margin-right: 10px;
+
+  & span {
+    font-size: 30px;
+    color: $color__accent--navy;
   }
 }

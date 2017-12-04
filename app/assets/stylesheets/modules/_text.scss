@@ -50,15 +50,15 @@ h6 {
 
 // Text modifiers
 .text--sm {
-
+  font-size: 10px;
 }
 
 .text--md {
-
+  font-size: 14px;
 }
 
 .text--lg {
-
+  font-size: 18px;
 }
 
 .text--muted {
@@ -67,4 +67,20 @@ h6 {
 
 .text--white {
 
+}
+
+.text--sans {
+  font-family: $text__family--sans;
+}
+
+.text--cursive {
+  font-family: $text__family--cursive;
+}
+
+.text--times {
+  font-family: $text__family--times;
+}
+
+.text--clear {
+  font-family: $text__family--clear;
 }
