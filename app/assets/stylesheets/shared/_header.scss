@@ -20,6 +20,7 @@ $header__nav-height: 70px;
   left: 0;
   background-color: #fff;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  z-index: 50;
   @media (max-width: $size__width--lg - 1px) {
     height: $header__height--sm;
   }
