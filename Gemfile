@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use jQuery
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+# Use jQuery-turbolinks gem to link turbolink events to jquery
+gem 'jquery-turbolinks', '~> 2.1'
 # Use bootstrap
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use font-awesome
