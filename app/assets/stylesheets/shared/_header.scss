@@ -22,7 +22,7 @@ $header__nav-height: 70px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   z-index: 50;
   @media (max-width: $size__width--lg - 1px) {
-    height: $header__height--sm;
+    height: $header__height--md;
   }
 
   &__logo {
@@ -205,5 +205,12 @@ $header__nav-height: 70px;
         text-align: center;
       }
     }
+  }
+}
+
+.body__content {
+  padding-top: $header__height--xl;
+  @media (max-width: $size__width--lg - 1px) {
+    padding-top: $header__height--md;
   }
 }
