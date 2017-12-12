@@ -8,20 +8,24 @@ $text__family--sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 $text__family--cursive: 'Bad Script', Cursive;
 $text__family--times: 'Quattrocento', 'Times New Roman', Georgia, Serif;
 $text__family--clear: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+$text__family--bold: 'Nunito', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
 // Text elements
 p, span {
   font-family: $text__family--clear;
+  font-size: 16px;
+  color: $color__secondary;
 }
 
 a {
   font-family: $text__family--times;
+  color: $color__secondary;
 }
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: $text__family--times !important;
-  color: $color__accent--navy;
+  color: $color__secondary;
 }
 
 h1 {
@@ -54,33 +58,76 @@ h6 {
 }
 
 .text--md {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .text--lg {
-  font-size: 18px;
+  font-size: 24px;
+}
+
+.text--xl {
+  font-size: 32px;
+}
+
+.text--normal {
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+.text--bold {
+  font-weight: bold !important;;
+}
+
+.text--italic {
+  font-style: italic !important;
+}
+
+.text--left {
+  text-align: left !important;;
+}
+
+.text--right {
+  text-align: right !important;;
+}
+
+.text--center {
+  text-align: center !important;;
+}
+
+.text--justify-gt-xs {
+  @media (min-width: $size__width--sm) {
+    text-align: justify !important;
+  }
 }
 
 .text--muted {
 
 }
 
-.text--white {
+.text--emph {
+  font-family: $text__family--bold !important;;
+}
 
+.text--white {
+  color: white !important;
+}
+
+.text--navy {
+  color: $color__accent--navy !important;
 }
 
 .text--sans {
-  font-family: $text__family--sans;
+  font-family: $text__family--sans !important;
 }
 
 .text--cursive {
-  font-family: $text__family--cursive;
+  font-family: $text__family--cursive !important;;
 }
 
 .text--times {
-  font-family: $text__family--times;
+  font-family: $text__family--times !important;;
 }
 
 .text--clear {
-  font-family: $text__family--clear;
+  font-family: $text__family--clear !important;;
 }

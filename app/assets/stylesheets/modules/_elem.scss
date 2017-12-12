@@ -1,3 +1,4 @@
+@import "base";
 /**
  * Element modified module, helper module for arrangement of elements on a page
  */
@@ -13,4 +14,42 @@
 
 .elem--left {
   float: left;
+}
+
+.elem--navy-bg {
+  background-color: $color__accent--navy;
+}
+
+.elem__hide {
+  display: none;
+
+  &--xl {
+    @media (min-width: $size__width--xl) {
+      display: none;
+    }
+  }
+
+  &--lg {
+    @media (min-width: $size__width--lg) and (max-width: $size__width--xl - 1px) {
+      display: none;
+    }
+  }
+
+  &--md {
+    @media (min-width: $size__width--md) and (max-width: $size__width--lg - 1px) {
+      display: none;
+    }
+  }
+
+  &--sm {
+    @media (min-width: $size__width--sm) and (max-width: $size__width--md - 1px) {
+      display: none;
+    }
+  }
+
+  &--xs {
+    @media (max-width: $size__width--sm - 1px) {
+      display: none;
+    }
+  }
 }

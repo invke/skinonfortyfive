@@ -1,63 +1,140 @@
 <div class="container-fluid">
   <div class="section section--taranaki">
-
   </div>
 </div>
 
-<div class="container">
+<div class="container container--slim">
   <!-- Welcome section and prompt contact phone number -->
   <div class="section section--welcome welcome">
-    <span class="welcome__greeting">
+    <hr/>
+    <div class="welcome__greeting text--times text--center">
       Welcome to Skin on Forty Five!
-    </span>
-    <span class="welcome__contact-us elem--right">
-      Call us today on
-      <span class="welcome__contact-phone">
-        06 6521 245
-      </span>
-    </span>
+    </div>
+
+    <div class="double-separator">
+      <hr class="double-separator__thick-line"/>
+      <hr class="double-separator__thin-line"/>
+      <hr class="double-separator__vertical-line"/>
+    </div>
+  </div>
+
+  <div class="section section--welcome welcome">
+    <!--<div class="welcome__greeting text&#45;&#45;times text&#45;&#45;center text&#45;&#45;white elem&#45;&#45;navy-bg">-->
+    <!--Welcome to Skin on Forty Five!-->
+    <!--</div>-->
+    <div class="two-column">
+      <div class="two-column__left-column">
+        <div class="intro">
+          <p class="text--times text--justify-gt-xs">Skin on Forty Five is a skin, vein and cosmetic medicine clinic at the Oakura
+            Medical Centre, run by Dr Brent Anderson.</p>
+          <br/>
+          <p class="text--times text--justify-gt-xs">We offer a broad range of appearance medicine treatments, from PRP, filler
+            and BTX to hair, vein and pigment laser treatments!</p>
+        </div>
+      </div>
+
+      <div class="two-column__vertical-line"></div>
+
+      <div class="two-column__right-column">
+        <div class="welcome__contact-us">
+          <div class="text--right">
+            <span class="text--times">Call us today on</span>
+            <br class="elem__hide--sm elem__hide--md elem__hide--lg elem__hide--xl"/>
+            <span class="welcome__contact-phone text--times">
+            06 6521 245
+            </span>
+            <div class="welcome__address text--times">
+              1147 Main South Road, Surf Highway 45, Oakura
+            </div>
+            <br/>
+            <span class="text--md text--times">Stay connected with us:</span>
+            <br/>
+          </div>
+          <a class="social-media social-media--instagram elem--right" href="">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a class="social-media social-media--facebook elem--right" href="https://www.facebook.com/skinon45/">
+            <span class="fa fa-facebook"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="double-separator">
+    <hr class="double-separator__vertical-line double-separator__vertical-line--reversed"/>
+    <hr class="double-separator__thin-line double-separator__thin-line--reversed"/>
+    <hr class="double-separator__thick-line double-separator__thick-line--reversed"/>
   </div>
 
   <!-- Little intro section and hot treatments carousel -->
-  <div class="section section--intro-n-marketing">
-    <div class="intro">
-      <p>Skin on Forty Five is a skin, vein and cosemtic medicine clinic at the Oakura Medical Centre, run by Dr Brent Anderson.</p>
-      <hr>
-      <h2>New Treatments Comming Soon!</h2>
-      <p>The clinic has planned a redevelopment late in 2017 to accommodate further facilities and hence offer a greater range of treatments and staff to accommodate exciting new developments in the field of skin care. We aim to provide the best up to date treatments for skin and a unique range of products to supplement our service.</p>
-      <hr>
-      <span class="text--lg text--cursive">Stay connected with us</span>
-      <br>
-      <br>
-      <a class="facebook" href="https://www.facebook.com/skinon45/">
-        <span class="fa fa-facebook"></span>
-      </a>
-      <a class="instagram" href="">
-        <span class="fa fa-instagram"></span>
-      </a>
-    </div>
+  <div class="section section--marketing">
     <div class="treatments-carousel">
       <div id="treatments-carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#treatments-carousel" data-slide-to="0" class="active"></li>
           <li data-target="#treatments-carousel" data-slide-to="1"></li>
-          <li data-target="#treatments-carousel" data-slide-to="2"></li>
-          <li data-target="#treatments-carousel" data-slide-to="3"></li>
         </ol>
         <!-- Slides & wrappers -->
         <div class="carousel-inner">
+          <!-- Varicose Veins -->
           <div class="item active">
-            <img src="https://via.placeholder.com/800x500/dddddd/ffffff" alt="Marketing 1">
+            <div class="carousel-item">
+              <div class="carousel-item__left">
+                <div class="carousel-item__left-inner">
+                  <h3 class="carousel-item__header text--center text--times text--bold">
+                    Varicose Veins
+                  </h3>
+                  <br/>
+                  <br/>
+                  <p class="carousel-item__text text--center text--times text--md">
+                    At Skin on Forty Five we offer two modern treatments for varicose and spider veins!
+                  </p>
+                  <br/>
+                  <br/>
+                  <p class="text--xl text--center text--times text--bold">
+                    Laser treatment &
+                    <br/>
+                    Sclerotherapy!
+                  </p>
+                </div>
+              </div>
+              <!--<img class="carousel-item__img" src="https://via.placeholder.com/700x500/dddddd/ffffff" alt="Marketing 1">-->
+              <img class="carousel-item__img" src="<%= image_url 'carousel/feet-stock.jpg' %>" alt="Varicose & Spider Vein Removal!">
+            </div>
           </div>
+          <!-- Introducing: Laser Treatments -->
           <div class="item">
-            <img src="https://via.placeholder.com/800x500/dddddd/ffffff" alt="Marketing 2">
-          </div>
-          <div class="item">
-            <img src="https://via.placeholder.com/800x500/dddddd/ffffff" alt="Marketing 3">
-          </div>
-          <div class="item">
-            <img src="https://via.placeholder.com/800x500/dddddd/ffffff" alt="Marketing 4">
+            <div class="carousel-item">
+              <div class="carousel-item__left">
+                <div class="carousel-item__left-inner">
+                  <h3 class="carousel-item__header text--center  text--times">
+                    <span class="text--times text--bold">Introducing:</span>
+                    <br/>
+                    <i>laser treatments</i>
+                  </h3>
+                  <br/>
+                  <br/>
+                  <p class="carousel-item__text text-center text--times text--md">
+                    We host a suite of highly advanced laser equipment giving us the ability to perform a variety of
+                    modern treatments:
+                  </p>
+                  <br/>
+                  <br/>
+                  <p class="carousel-item__text text--lg text--center text--bold text--clear">
+                    Hair removal,
+                    <br/>
+                    Spider & Varicose vein removal,
+                    <br/>
+                    Skin pigment correction
+                    <br/>
+                    & <b class="text--emph">MORE!</b>
+                  </p>
+                </div>
+              </div>
+              <img class="carousel-item__img" src="<%= image_url 'carousel/laser-stock.jpg' %>" alt="Introducing: Laser Treatments!">
+            </div>
           </div>
         </div>
         <!-- Navigation controls -->
@@ -72,6 +149,137 @@
       </div>
     </div>
   </div>
+
+  <div class="double-separator">
+    <hr class="double-separator__thick-line"/>
+    <hr class="double-separator__thin-line"/>
+    <hr class="double-separator__vertical-line"/>
+  </div>
+
+  <div class="two-column">
+    <div class="two-column__left-column">
+
+      <div class="news">
+        <h2 class="text--bold text--center">News</h2>
+
+        <div class="news__feed">
+
+          <div class="post">
+            <h3 class="post__header">New Treatments Coming Soon!</h3>
+            <div class="post__contents text--justify-gt-xs">
+              <p class="text--times">The clinic has planned a redevelopment late in 2017 to accommodate further facilities and hence offer a
+                greater range of treatments and staff to accommodate exciting new developments in the field of skin
+                care. We aim to provide the best up to date treatments for skin and a unique range of products to
+                supplement our service.</p>
+            </div>
+
+            <span class="post__timestamp">October 2017</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="two-column__vertical-line"></div>
+
+    <div class="two-column__right-column">
+
+      <div class="book-consult">
+        <h2 class="text--bold text--center">Book Consultation</h2>
+
+        <form id="book-consult-form" class="book-consult-form">
+          <input id="book-consult-form__name" class="book-consult-form__input book-consult-form__input--name"
+                 name="name" placeholder="name" type="text"/>
+          <input id="book-consult-form__phone" class="book-consult-form__input book-consult-form__input--phone"
+                 name="phone" placeholder="phone" type="text"/>
+          <br/>
+          <input id="book-consult-form__email" class="book-consult-form__input book-consult-form__input--email"
+                 name="email" placeholder="email" type="email"/>
+          <br/>
+          <textarea id="book-consult-form__message" class="book-consult-form__input book-consult-form__input--message"
+                 name="message" placeholder="message and preferred appointment time" type="text">
+          </textarea>
+          <br/>
+          <label for="book-consult-form__first-time"
+                 class="book-consult-form__label book-consult-form__label----first-time text--times text--normal text--italic">
+            Have you been with us before?
+          </label>
+          <input id="book-consult-form__first-time" class="book-consult-form__input book-consult-form__input--first-time"
+                 name="first-time" placeholder="false" type="checkbox"/>
+        </form>
+
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="hours">
+        <h2 class="text--center text--bold">Our Hours</h2>
+
+        <span class="hours__day text--times">Monday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Tuesday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Wednesday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Thursday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Friday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Saturday</span><span class="hours__days-times text--times">closed</span>
+        <br/>
+        <span class="hours__day text--times">Sunday</span><span class="hours__days-times text--times">closed</span>
+        <br/>
+        <br/>
+      </div>
+
+      <div class="contact-details">
+        <h2 class="text--center text--bold">Contact us</h2>
+
+        <i class="fa fa-2x fa-phone contact-details__emblem"></i>
+        <span class="contact-details__item text--times">06 6521 245</span>
+        <br/>
+        <i class="fa fa-2x fa-envelope contact-details__emblem"></i>
+        <span class="contact-details__item text--times">info@skinonfortyfive.co.nz</span>
+        <br/>
+        <i class="fa fa-2x fa-map-marker contact-details__emblem"></i>
+        <span class="contact-details__item text--times">1147 Main South Road, Surf Highway 45, Oakura</span>
+      </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="double-separator">
+    <hr class="double-separator__vertical-line double-separator__vertical-line--reversed"/>
+    <hr class="double-separator__thin-line double-separator__thin-line--reversed"/>
+    <hr class="double-separator__thick-line double-separator__thick-line--reversed"/>
+  </div>
+
+  <div class="map">
+    <h2 class="text--center text--times text--bold">Where to find us</h2>
+    <!-- Google Maps -->
+    <div id="googleMap" class="map__google-map"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(-39.116974, 173.956804);
+            var mapProp = {
+                center: myCenter,
+                zoom: 17,
+                scrollwheel: false,
+                draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOifQuwu2XxmEVUAnJoscgNy533-50Xfs&callback=myMap"></script>
+  </div>
+
 </div>
 
 

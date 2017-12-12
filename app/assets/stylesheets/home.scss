@@ -2,66 +2,88 @@
 @import "modules/text";
 
 $section__taranaki--height: 400px;
-$section__welcome--height: 70px;
 
-$carousel--width: 800px;
-$carousel--height: 500px;
+$carousel__width--xl: 700px;
+$carousel__height--xl: 500px;
+$carousel__width--lg: 600px;
+$carousel__height--lg: 500px;
+$carousel__width--md: 500px;
+$carousel__height--md: 400px;
+$carousel__width--sm: 500px;
+$carousel__height--sm: 400px;
+$carousel__width--xs: 500px;
+$carousel__height--xs: 400px;
+
+$carousel__img-width--xl: 700px;
 
 .section {
 
   &--taranaki {
     width: calc(100% + 30px);
     height: $section__taranaki--height;
-    margin: 0 -15px 10px -15px;
+    margin: 0 -15px 0px -15px;
     padding: 0 15px; // min 15px
     background-image: image_url('backgrounds/taranaki-coast.jpg');
     background-size: cover;
     background-position: 50% 80%;
+    overflow-y: hidden;
   }
 
   &--welcome {
-    padding-top: 15px;
-    height: $section__welcome--height;
-    border-bottom: 1px solid $color__accent--navy;
   }
 
-  &--intro-n-marketing {
+  &--marketing {
   }
 }
 
 .welcome {
   &__greeting {
-    font-size: 28px;
-    font-family: $text__family--cursive;
-    color: $color__accent--navy;
+    font-size: 32px;
   }
 
   &__contact-us {
-    font-size: 18px;
-    font-family: $text__family--clear;
-    color: $color__accent--navy;
+    padding-top: 20px;
+    font-size: 22px;
+    @media (min-width: $size__width--md) {
+      float: right;
+    }
   }
 
   &__contact-phone {
     font-size: 32px;
     font-weight: bold;
-    font-family: $text__family--times;
-    color: $color__accent--navy;
     padding-left: 10px;
+  }
+
+  &__address {
+    font-size: 16px;
+    font-weight: normal;
   }
 }
 
 .intro {
-  width: calc(100% - #{$carousel--width});
-  float: left;
-  padding-top: 15px;
+  width: 100%;
+  padding: 30px 15px 30px 0;
+  display: inline-block;
+
+  & p {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .treatments-carousel {
-  float: right;
-  width: $carousel--width;
-  height: $carousel--height;
-  border-left: 1px solid $color__accent--navy;
+  width: 100%;
+  height: $carousel__height--xl;
+  @media (max-width: $size__width--xl - 1px) {
+    height: $carousel__height--lg;
+  }
+  @media (max-width: $size__width--lg - 1px) {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    margin-top: 15px;
+  }
 
   & .carousel {
     height: 100%;
@@ -75,10 +97,6 @@ $carousel--height: 500px;
       & .item {
         height: 100%;
         width: 100%;
-        & img {
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
       }
     }
 
@@ -101,16 +119,16 @@ $carousel--height: 500px;
       }
 
       &.left {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
-
+        //background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0));
+        background: none;
         & span {
           left: 10px;
         }
       }
 
       &.right {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
-
+        //background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+        background: none;
         & span {
           right: 10px;
         }
@@ -125,20 +143,248 @@ $carousel--height: 500px;
   }
 }
 
-.facebook {
-  margin-right: 10px;
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
 
-  & span {
-    font-size: 30px;
-    color: $color__accent--navy;
+  &__left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: block;
+    padding-right: 15px;
+    margin-right: $carousel__img-width--xl;
+    background-color: white;
+
+    &-inner {
+      padding: 15px;
+    }
+  }
+
+  &__header {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  &__text {
+
+  }
+
+  &__img {
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: none;
+  }
+
+  &--inverse {
+    & .carousel-item {
+
+      &__left {
+        background-color: $color__accent--navy;
+      }
+
+      &__header, &__header span {
+        color: $color__primary--light;
+      }
+
+      &__text, &__text span {
+        color: $color__primary--light;
+      }
+    }
   }
 }
 
-.instagram {
-  margin-right: 10px;
+.social-media {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border: 1px solid $color__accent--gold;
+  border-radius: 30px;
+  padding-left: 16px;
+  padding-top: 14px;
+  margin: 0 5px;
+
+  &:hover {
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: $color__accent--gold;
+
+    & span {
+      color: white;
+    }
+  }
+
+  &:active, &:focus {
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: $color__accent--navy;
+
+    & span {
+      color: white;
+    }
+  }
 
   & span {
+    display: inline;
     font-size: 30px;
-    color: $color__accent--navy;
+    color: $color__accent--gold;
+  }
+
+  &--facebook {
+    padding-left: 19px;
+  }
+
+  &--instagram {
+
+  }
+}
+
+.news {
+  padding-right: 15px;
+  @media (max-width: $size__width--md - 1px) {
+    padding-right: 0;
+  }
+  height: 100%;
+
+  &__feed {
+    overflow-y: scroll;
+  }
+}
+
+.post {
+  &__header {
+
+  }
+  &__timestamp {
+    float: right;
+    color: $color__primary--dark;
+  }
+}
+
+.book-consult {
+  padding-left: 15px;
+  @media (max-width: $size__width--md - 1px) {
+    padding-left: 0;
+  }
+}
+
+.book-consult-form {
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid $color__accent--gold;
+    padding: 4px;
+    font-family: $text__family--times;
+    margin: 2px 0;
+    &:focus {
+      outline: none;
+      box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+      border: 1px solid $color__accent--gold !important;
+    }
+
+    &--name {
+      width: calc(50% - 2px);
+      @media (max-width: $size__width--sm - 1px) {
+        width: 100%;
+      }
+    }
+
+    &--phone {
+      width: calc(50% - 2px);
+      @media (max-width: $size__width--sm - 1px) {
+        width: 100%;
+      }
+    }
+
+    &--email {
+      width: 100%;
+    }
+
+    &--message {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 30px;
+      max-height: 120px;
+      overflow-y: scroll;
+    }
+
+    &--first-time {
+      color: $color__accent--navy;
+    }
+  }
+
+  &__label {
+    &----first-time {
+      padding-right: 20px;
+    }
+  }
+}
+
+.hours {
+  padding-left: 15px;
+  @media (max-width: $size__width--md - 1px) {
+    padding-left: 0;
+  }
+
+  &__day {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    font-size: 18px;
+    @media (max-width: $size__width--sm - 1px) {
+      font-size: 14px;
+    }
+  }
+
+  &__days-times {
+    display: inline-block;
+    width: 50%;
+    padding-left: 15px;
+    @media (max-width: $size__width--sm - 1px) {
+      padding-left: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.map {
+  &__google-map {
+    height: 400px;
+    width: 100%;
+    border-top: solid 1px $color__accent--gold;
+    border-bottom: solid 1px $color__accent--gold;
+  }
+}
+
+.contact-details {
+  padding-left: 15px;
+  @media (max-width: $size__width--md - 1px) {
+    padding-left: 0;
+  }
+
+  &__item {
+    padding-left: 30px;
+    @media (max-width: $size__width--sm - 1px) {
+      padding-left: 5px;
+    }
+  }
+
+  &__emblem {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid $color__accent--gold;
+    text-align: center;
+    padding-top: 6px;
+    padding-left: 1px;
+    font-size: 15px !important;
+    color: $color__accent--gold;
+    margin: 5px;
   }
 }
