@@ -263,21 +263,22 @@
     <!-- Google Maps -->
     <div id="googleMap" class="map__google-map"></div>
     <script>
-        function myMap() {
-            var myCenter = new google.maps.LatLng(-39.116974, 173.956804);
-            var mapProp = {
-                center: myCenter,
-                zoom: 17,
-                scrollwheel: false,
-                draggable: true,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            var marker = new google.maps.Marker({ position: myCenter });
-            marker.setMap(map);
-        }
+       function myMap() {
+           var myCenter = new google.maps.LatLng(-39.116974, 173.956804);
+           var mapProp = {
+               center: myCenter,
+               zoom: 17,
+               scrollwheel: false,
+               draggable: true,
+               mapTypeId: google.maps.MapTypeId.ROADMAP
+           };
+           var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+           var marker = new google.maps.Marker({ position: myCenter });
+           marker.setMap(map);
+       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOifQuwu2XxmEVUAnJoscgNy533-50Xfs&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOifQuwu2XxmEVUAnJoscgNy533-50Xfs&callback=myMap"
+            data-turbolinks-eval="false"></script>
   </div>
 
 </div>

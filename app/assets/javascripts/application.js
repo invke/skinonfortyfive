@@ -16,17 +16,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
-
-/**
- * Header & nav behaviour
- */
-$(document).ready(function () {
-    $("#header__mobile-menu-toggle").on("click", function () {
-        // $("button.header__mobile-menu-toggle").on("click", function () {
-        console.log("$(button.header__mobile-menu-toggle).click");
-        $(".header__nav-wrapper").toggleClass("collapsed");
-    });
-});
-
+//= require shared/_header.js
 
 //= require turbolinks

@@ -10,10 +10,10 @@
       <ul class="header__nav header__nav--left nav nav--left">
         <div class="nav__inner">
           <li class="nav__item">
-            <a>About us</a>
+            <a data-navid="about-us">About us</a>
           </li>
           <li class="nav__item">
-            <a>Treatments</a>
+            <a data-navid="treatments">Treatments</a>
           </li>
         </div>
       </ul>
@@ -21,20 +21,137 @@
       <ul class="header__nav header__nav--right nav nav--right">
         <div class="nav__inner">
           <li class="nav__item">
-            <a>Request a Consultation</a>
+            <a data-navid="request-consultation">Request a Consultation</a>
           </li>
           <li class="nav__item">
-            <a>Contact us</a>
+            <a data-navid="contact-us">Contact us</a>
           </li>
         </div>
       </ul>
     </div>
 
     <button id="header__mobile-menu-toggle" type="button" class="header__mobile-menu-toggle">
-      <!--<span class="glyphicon glyphicon-menu-hamburger"></span>-->
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </button>
   </div>
+</div>
+
+<!-- Fixed web page overlay (full cover) for the submenu's to the main navigation -->
+<div class="submenu-overlay collapsed">
+  <div class="submenu-overlay__inner">
+    <i class="fa fa-2x fa-close submenu-overlay__close"></i>
+
+    <!-- About us -->
+    <div class="submenu-overlay__menu submenu-overlay__menu--about-us">
+      <h2>About us</h2>
+    </div>
+
+    <!-- Treatments -->
+    <div class="submenu-overlay__menu submenu-overlay__menu--treatments">
+
+      <div class="double-separator">
+        <hr class="double-separator__thick-line"/>
+        <hr class="double-separator__thin-line"/>
+        <hr class="double-separator__vertical-line"/>
+      </div>
+
+      <div class="two-column">
+        <div class="two-column__left-column">
+          <div class="submenu-overlay__menu-section">
+            <h3>Skin Care</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Peels', skin_care_peels_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Dermafrac', skin_care_dermafrac_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Needling', skin_care_needling_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Products', skin_care_products_path %>
+            </div>
+          </div>
+
+          <div class="submenu-overlay__menu-section">
+            <h3>Appearance Medicine</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'PRP', appearance_medicine_prp_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Filler', appearance_medicine_filler_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Botulinum', appearance_medicine_botulinum_path %>
+            </div>
+
+            <h3>Hair Care</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Transplants', hair_care_transplant_path %>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-column__vertical-line"></div>
+
+        <div class="two-column__right-column">
+          <div class="submenu-overlay__menu-section">
+            <h3>Laser</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Hair', laser_hair_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Veins', laser_veins_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Pigment', laser_pigment_path %>
+            </div>
+          </div>
+
+          <div class="submenu-overlay__menu-section">
+            <h3>Skin Cancer</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Consultations', skin_cancer_consults_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Removals', skin_cancer_removals_path %>
+            </div>
+          </div>
+
+          <div class="submenu-overlay__menu-section">
+            <h3>Varicose Veins</h3>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Laser', varicose_veins_laser_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Sclerotherapy', varicose_veins_sclero_path %>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <%= link_to 'Spider', varicose_veins_spider_path %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="double-separator">
+        <hr class="double-separator__vertical-line double-separator__vertical-line--reversed"/>
+        <hr class="double-separator__thin-line double-separator__thin-line--reversed"/>
+        <hr class="double-separator__thick-line double-separator__thick-line--reversed"/>
+      </div>
+    </div>
+
+    <!-- Request consultation -->
+    <div class="submenu-overlay__menu submenu-overlay__menu--request-consultation">
+      <h2>Request a Consultation</h2>
+    </div>
+
+    <!-- Contact us -->
+    <div class="submenu-overlay__menu submenu-overlay__menu--contact-us">
+      <h2>Contact us</h2>
+    </div>
+  </div>
+
 </div>
