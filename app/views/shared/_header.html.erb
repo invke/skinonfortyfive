@@ -43,6 +43,12 @@
   <div class="submenu-overlay__inner">
     <i class="fa fa-2x fa-close submenu-overlay__close"></i>
 
+    <div class="double-separator">
+      <hr class="double-separator__thick-line"/>
+      <hr class="double-separator__thin-line"/>
+      <hr class="double-separator__vertical-line"/>
+    </div>
+
     <!-- About us -->
     <div class="submenu-overlay__menu submenu-overlay__menu--about-us">
       <h2>About us</h2>
@@ -50,12 +56,6 @@
 
     <!-- Treatments -->
     <div class="submenu-overlay__menu submenu-overlay__menu--treatments">
-
-      <div class="double-separator">
-        <hr class="double-separator__thick-line"/>
-        <hr class="double-separator__thin-line"/>
-        <hr class="double-separator__vertical-line"/>
-      </div>
 
       <div class="two-column">
         <div class="two-column__left-column">
@@ -135,12 +135,6 @@
         </div>
 
       </div>
-
-      <div class="double-separator">
-        <hr class="double-separator__vertical-line double-separator__vertical-line--reversed"/>
-        <hr class="double-separator__thin-line double-separator__thin-line--reversed"/>
-        <hr class="double-separator__thick-line double-separator__thick-line--reversed"/>
-      </div>
     </div>
 
     <!-- Request consultation -->
@@ -150,7 +144,65 @@
 
     <!-- Contact us -->
     <div class="submenu-overlay__menu submenu-overlay__menu--contact-us">
-      <h2>Contact us</h2>
+      <div class="two-column">
+        <div class="two-column__left-column">
+          <div class="submenu-overlay__menu-section">
+            <div class="submenu-overlay__menu-item">
+              <a href="<%= contact_index_path %>">
+                <i class="fa fa-address-card-o"></i>
+                Contact details
+              </a>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <a href="<%= contact_index_path %>">
+                <i class="fa fa-map-o"></i>
+                Where to find us</a>
+            </div>
+            <hr/>
+            <div class="submenu-overlay__menu-item">
+                <span class="text--times text--md text--italic">
+                <i class="fa fa-phone"></i>
+                  06 6521 245
+              </span>
+            </div>
+            <div class="submenu-overlay__menu-item">
+                <span class="text--times text--md text--italic">
+                <i class="fa fa-envelope-o"></i>
+                  info@skinonfortyfive.co.nz
+              </span>
+            </div>
+            <hr class="elem__hide--md elem__hide--lg elem__hide--xl"/>
+          </div>
+
+        </div>
+
+        <div class="two-column__vertical-line"></div>
+
+        <div class="two-column__right-column">
+          <div class="submenu-overlay__menu-section">
+            <div class="submenu-overlay__menu-item">
+              <a href="https://www.facebook.com/skinon45/">
+                <i class="fa fa-facebook"></i>
+                Find us on facebook
+                </a>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <a href="">
+                <i class="fa fa-instagram"></i>
+                Follow us on instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="double-separator">
+      <hr class="double-separator__vertical-line double-separator__vertical-line--reversed"/>
+      <hr class="double-separator__thin-line double-separator__thin-line--reversed"/>
+      <hr class="double-separator__thick-line double-separator__thick-line--reversed"/>
     </div>
   </div>
 

@@ -271,10 +271,12 @@ $submenu-overlay__z-index: 60;
   &__menu-item {
     font-size: 18px;
     width: 100%;
-    & a {
-      display: block;
+    & a, & span {
+      display: inline-block;
       width: 100%;
       padding: 3px 5px;
+    }
+    & a {
       &:hover {
         text-decoration: none;
         cursor: pointer;
