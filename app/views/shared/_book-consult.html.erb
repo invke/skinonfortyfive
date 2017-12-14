@@ -1,0 +1,22 @@
+<form id="<%= bookConsultFormId %>" class="book-consult-form">
+  <input id="book-consult-form__name" class="book-consult-form__input book-consult-form__input--name"
+         name="name" placeholder="name" type="text"/>
+  <input id="book-consult-form__phone" class="book-consult-form__input book-consult-form__input--phone"
+         name="phone" placeholder="phone" type="text"/>
+  <br/>
+  <input id="book-consult-form__email" class="book-consult-form__input book-consult-form__input--email"
+         name="email" placeholder="email" type="email"/>
+  <br/>
+  <textarea id="book-consult-form__message" class="book-consult-form__input book-consult-form__input--message"
+            name="message" placeholder="message and preferred appointment time" type="text"></textarea>
+  <br/>
+  <!-- Information section / new or returning user -->
+  <label for="book-consult-form__first-time"
+         class="book-consult-form__label book-consult-form__label----first-time text--times text--normal text--italic">
+    Have you been with us before?
+  </label>
+  <input id="book-consult-form__first-time" class="book-consult-form__input book-consult-form__input--first-time"
+         name="first-time" placeholder="false" type="checkbox"/>
+  <!-- Submit request for consultation button -->
+  <button class="book-consult-form__submit" form="<%= bookConsultFormId %>">Submit</button>
+</form>

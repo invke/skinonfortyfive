@@ -51,7 +51,43 @@
 
     <!-- About us -->
     <div class="submenu-overlay__menu submenu-overlay__menu--about-us">
-      <h2>About us</h2>
+      <div class="two-column">
+        <div class="two-column__left-column">
+          <div class="submenu-overlay__menu-section">
+            <div class="submenu-overlay__menu-item">
+              <a href="<%= about_index_path %>">
+                <i class="fa fa-info-circle"></i>
+                About Skin on Forty Five
+              </a>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <a href="<%= about_team_path %>">
+                <i class="fa fa-user-o"></i>
+                Meet the team</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="two-column__vertical-line"></div>
+
+        <div class="two-column__right-column">
+          <div class="submenu-overlay__menu-section">
+            <div class="submenu-overlay__menu-item">
+              <a href="https://www.facebook.com/skinon45/">
+                <i class="fa fa-facebook"></i>
+                Find us on facebook
+              </a>
+            </div>
+            <div class="submenu-overlay__menu-item">
+              <a href="">
+                <i class="fa fa-instagram"></i>
+                Follow us on instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Treatments -->
@@ -139,7 +175,32 @@
 
     <!-- Request consultation -->
     <div class="submenu-overlay__menu submenu-overlay__menu--request-consultation">
-      <h2>Request a Consultation</h2>
+      <div class="submenu-overlay__menu-section">
+        <h2>Book a consultation</h2>
+        <span class="text--times text--italic">Enter your details below to request a consultation and expect to hear back from us shortly!</span>
+        <br/>
+        <span class="text--times text--italic">Please refer to our opening ours when requesting a time</span>
+        <br/>
+        <br/>
+        <%= render partial: 'shared/book-consult', :locals => {:bookConsultFormId => 'book-consult-form--header'} %>
+      </div>
+
+      <div class="submenu-overlay__menu-section">
+        <span class="hours__day text--times">Monday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Tuesday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Wednesday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Thursday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Friday</span><span class="hours__days-times text--times">9:00am - 5:00pm</span>
+        <br/>
+        <span class="hours__day text--times">Saturday</span><span class="hours__days-times text--times">closed</span>
+        <br/>
+        <span class="hours__day text--times">Sunday</span><span class="hours__days-times text--times">closed</span>
+        <br/>
+      </div>
     </div>
 
     <!-- Contact us -->
@@ -184,7 +245,7 @@
               <a href="https://www.facebook.com/skinon45/">
                 <i class="fa fa-facebook"></i>
                 Find us on facebook
-                </a>
+              </a>
             </div>
             <div class="submenu-overlay__menu-item">
               <a href="">
@@ -196,7 +257,6 @@
         </div>
       </div>
     </div>
-
 
 
     <div class="double-separator">

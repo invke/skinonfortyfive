@@ -272,59 +272,6 @@ $carousel__img-width--xl: 700px;
   }
 }
 
-.book-consult-form {
-
-  &__input {
-    border: none;
-    border-bottom: 1px solid $color__accent--gold;
-    padding: 4px;
-    font-family: $text__family--times;
-    margin: 2px 0;
-    &:focus {
-      outline: none;
-      box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
-      border: 1px solid $color__accent--gold !important;
-    }
-
-    &--name {
-      width: calc(50% - 2px);
-      @media (max-width: $size__width--sm - 1px) {
-        width: 100%;
-      }
-    }
-
-    &--phone {
-      width: calc(50% - 2px);
-      @media (max-width: $size__width--sm - 1px) {
-        width: 100%;
-      }
-    }
-
-    &--email {
-      width: 100%;
-    }
-
-    &--message {
-      width: 100%;
-      min-width: 100%;
-      max-width: 100%;
-      min-height: 30px;
-      max-height: 120px;
-      overflow-y: scroll;
-    }
-
-    &--first-time {
-      color: $color__accent--navy;
-    }
-  }
-
-  &__label {
-    &----first-time {
-      padding-right: 20px;
-    }
-  }
-}
-
 .hours {
   padding-left: 15px;
   @media (max-width: $size__width--md - 1px) {
