@@ -1,0 +1,32 @@
+@import "modules/base";
+@import "modules/text";
+
+.footer {
+  padding: 100px 0 30px 0;
+
+  &__section {
+    padding: 0 15px;
+  }
+
+  &__copyright {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  &__contact-detail {
+    font-size: 16px;
+  }
+
+  &__contact-emblem {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid $color__accent--gold;
+    text-align: center;
+    padding-top: 6px;
+    padding-left: 1px;
+    font-size: 15px !important;
+    color: $color__accent--gold;
+    margin: 5px;
+  }
+}
