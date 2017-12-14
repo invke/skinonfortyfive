@@ -55,17 +55,5 @@
 
   &__submit {
     float: right;
-    height: 40px;
-    padding: 5px 15px;
-    border: 1px solid $color__accent--gold;
-    border-radius: 20px;
-    outline: none;
-    box-shadow: none;
-    font-family: $text__family--clear;
-    font-weight: 700;
-    &:hover {
-      background-color: $color__accent--gold;
-      color: white;
-    }
   }
 }

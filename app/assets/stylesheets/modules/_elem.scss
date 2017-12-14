@@ -1,9 +1,15 @@
+// Element module,
+// Helper for position of elements on a page and base element styling e.g. buttons
+
+/// Imports
+
 @import "base";
-/**
- * Element modified module, helper module for arrangement of elements on a page
- */
+@import "text";
+
+// Constants
 
 // Positioning modifiers
+
 .elem--inline {
   display: inline;
 }
@@ -51,5 +57,23 @@
     @media (max-width: $size__width--sm - 1px) {
       display: none;
     }
+  }
+}
+
+// Button styling
+
+.button {
+  height: 40px;
+  padding: 5px 15px;
+  border: 1px solid $color__accent--gold;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: none;
+  font-family: $text__family--clear;
+  font-weight: 700;
+  &:hover {
+    background-color: $color__accent--gold;
+    color: white;
+    text-decoration: none;
   }
 }
