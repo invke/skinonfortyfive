@@ -1,3 +1,66 @@
-// Place all the styles related to the about controller here.
-// They will automatically be included in application.scss.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Styling for about/index (about skin on forty five) and about/team (meet the team)
+
+// Imports
+
+@import "modules/base";
+@import "modules/text";
+
+// Contsants
+
+$profile__size: 150px;
+
+// Styling rules
+
+.about {
+  padding-top: 50px;
+
+  &__left-text {
+    padding: 15px;
+  }
+
+  &__right-pictures {
+    padding: 0 15px 15px 30px;
+  }
+}
+
+.profile {
+
+  &__picture {
+    position: relative;
+    display: inline-block;
+    width: $profile__size;
+    height: $profile__size;
+    border: 4px solid $color__accent--navy;
+    border-radius: $profile__size / 2;
+    margin: 15px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: $profile__size + 8px;
+      height: $profile__size + 8px;
+      border: 1px solid $color__accent--gold;
+      border-radius: $profile__size / 2;
+    }
+    &--brent {
+      background: image_url('team/Brent.jpg') no-repeat 50% 30%;
+      background-size: cover;
+    }
+    &--kara {
+      background: image_url('team/Kara.jpg') no-repeat 50% 30%;
+      background-size: cover;
+    }
+    &--rose {
+      background: image_url('team/Rose.jpg') no-repeat 50% 30%;
+      background-size: cover;
+    }
+  }
+
+  &__information {
+    float: right;
+    width: calc(100% - #{$profile__size});
+    padding-left: 15px;
+  }
+
+}
