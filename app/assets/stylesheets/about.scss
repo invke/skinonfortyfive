@@ -23,6 +23,23 @@ $profile__size: 150px;
   }
 }
 
+.team {
+  &__top {
+    padding: 15px;
+    @media (min-width: $size__width--lg) {
+      padding: 15px 120px;
+    }
+  }
+
+  &__left {
+    padding: 15px;
+  }
+
+  &__right {
+    padding: 15px;
+  }
+}
+
 .profile {
 
   &__picture {
@@ -55,12 +72,77 @@ $profile__size: 150px;
       background: image_url('team/Rose.jpg') no-repeat 50% 30%;
       background-size: cover;
     }
+    &--center-lt-md {
+      @media (max-width: $size__width--md - 1px) {
+        margin-left: calc(50% - #{$profile__size} / 2);
+        margin-right: calc(50% - #{$profile__size} / 2);
+      }
+    }
+    &--center-lt-sm {
+      @media (max-width: $size__width--sm - 1px) {
+        margin-left: calc(50% - #{$profile__size} / 2);
+        margin-right: calc(50% - #{$profile__size} / 2);
+      }
+    }
   }
 
   &__information {
     float: right;
     width: calc(100% - #{$profile__size});
     padding-left: 15px;
+    @media (max-width: $size__width--lg - 1px) {
+      padding-left: 0;
+    }
+    @media (min-width: $size__width--sm) and (max-width: $size__width--md - 1px) {
+      padding-left: 15px;
+    }
+    &--left {
+      @media (min-width: $size__width--md) {
+        float: left;
+        width: calc(50% - #{$profile__size} / 2);
+        padding-right: 15px;
+      }
+      @media (max-width: $size__width--md - 1px) {
+        width: 100%;
+        padding-right: 0;
+        & h2.text--right, & p.text--right {
+          text-align: center !important;
+        }
+      }
+    }
+    &--right {
+      @media (min-width: $size__width--md) {
+        float: right;
+        width: calc(50% - #{$profile__size} / 2);
+        padding-left: 15px;
+      }
+      @media (max-width: $size__width--md - 1px) {
+        width: 100%;
+        margin-bottom: 15px;
+        padding-left: 0;
+        & h2.text--right, & p.text--right {
+          text-align: center !important;
+        }
+      }
+    }
+    &--short {
+
+      @media (min-width: $size__width--lg) {
+        float: right;
+        width: calc(100% - #{$profile__size});
+        padding-left: 15px;
+      }
+      @media (min-width: $size__width--md) and (max-width: $size__width--lg - 1px) {
+        width: 100%;
+      }
+      @media(max-width: $size__width--sm - 1px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__story {
+    width: 100%;
   }
 
 }
