@@ -16,6 +16,9 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree .
+
 //= require shared/_header.js
+//= require shared/_googleAnalytics.js
+//= require shared/_googleMaps.js
 
 //= require turbolinks
