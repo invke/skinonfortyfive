@@ -1,3 +1,51 @@
 // Place all the styles related to the contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "modules/base";
+
+$contact__taranaki--height: 200px;
+
+// All page specific styles sit within the base page class element
+.contact {
+  &__taranaki {
+    width: calc(100% + 30px);
+    height: $contact__taranaki--height;
+    margin: 0 -15px 0px -15px;
+    padding: 0 15px; // min 15px
+    background-image: image_url('backgrounds/taranaki-coast.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    overflow-y: hidden;
+  }
+
+  & .contact-details {
+    padding-right: 15px;
+    @media (max-width: $size__width--md - 1px) {
+      padding-right: 0;
+    }
+  }
+
+  & .social-media-details {
+    padding-left: 15px;
+    @media (max-width: $size__width--md - 1px) {
+      padding-left: 0;
+    }
+  }
+
+  & .opening-hours {
+    padding-right: 15px;
+    @media (max-width: $size__width--md - 1px) {
+      padding-right: 0;
+    }
+  }
+
+  & .thank-you {
+    padding-left: 15px;
+    @media (max-width: $size__width--md - 1px) {
+      padding-left: 0;
+    }
+  }
+
+
+}
