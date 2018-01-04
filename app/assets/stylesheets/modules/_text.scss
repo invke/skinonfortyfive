@@ -12,9 +12,15 @@ $text__family--bold: 'Nunito', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
 // Text elements
 p, span {
-  font-family: $text__family--clear;
+  font-family: $text__family--times;
   font-size: 16px;
   color: $color__secondary;
+}
+
+li {
+  font-family: $text__family--times;
+  color: $color__secondary;
+  list-style: circle;
 }
 
 a {
