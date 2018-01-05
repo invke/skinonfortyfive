@@ -19,6 +19,12 @@
     text-align: center;
   }
 
+  &__subtitle {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+  }
+
   & .concerns {
     position: relative;
     border: 1px solid $color__accent--gold;
