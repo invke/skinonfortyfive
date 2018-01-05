@@ -12,11 +12,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  &:hover {
-    //border: 1px solid $color__accent--gold;
-    border: none;
-    //box-shadow: 3px 3px 5px rgba(black, 0.15);
-  }
+
+  &--contain { background-size: contain !important; }
 
   &--100x100 {
     width: 100px;
