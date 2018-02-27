@@ -10,4 +10,7 @@ class LaserController < ApplicationController
 
   def pigment
   end
+
+  def genesis
+  end
 end

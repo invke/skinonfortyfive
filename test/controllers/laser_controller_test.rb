@@ -21,4 +21,9 @@ class LaserControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get genesis" do
+    get laser_genesis_url
+    assert_response :success
+  end
+
 end

@@ -36,6 +36,8 @@ Rails.application.routes.draw do
 
   get 'laser/pigment'
 
+  get 'laser/genesis'
+
   get 'appearance_medicine/index'
 
   get 'appearance_medicine/prp'
