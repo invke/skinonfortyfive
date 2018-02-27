@@ -71,84 +71,67 @@
 
   <!-- Little intro section and hot treatments carousel -->
   <div class="section section--marketing">
-    <div class="treatments-carousel">
-      <div id="treatments-carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#treatments-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#treatments-carousel" data-slide-to="1"></li>
-        </ol>
-        <!-- Slides & wrappers -->
-        <div class="carousel-inner">
-          <!-- Varicose Veins -->
-          <div class="item active">
-            <div class="carousel-item">
-              <div class="carousel-item__left">
-                <div class="carousel-item__left-inner">
-                  <h3 class="carousel-item__header text--center text--times text--bold">
-                    Varicose Veins
-                  </h3>
-                  <br/>
-                  <br/>
-                  <p class="carousel-item__text text--center text--times text--md">
-                    At Skin on Forty Five we offer two modern treatments for varicose and spider veins!
-                  </p>
-                  <br/>
-                  <br/>
-                  <p class="text--xl text--center text--times text--bold">
-                    Laser treatment &
-                    <br/>
-                    Sclerotherapy!
-                  </p>
-                </div>
-              </div>
-              <!--<img class="carousel-item__img" src="https://via.placeholder.com/700x500/dddddd/ffffff" alt="Marketing 1">-->
-              <img class="carousel-item__img" src="<%= image_url 'carousel/feet-stock.jpg' %>" alt="Varicose & Spider Vein Removal!">
+    <div id="treatments-carousel" class="treatments-carousel carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel__indicators carousel-indicators">
+        <li data-target="#treatments-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#treatments-carousel" data-slide-to="1"></li>
+      </ol>
+      <!-- Slides & wrappers -->
+      <div class="carousel__inner carousel-inner">
+        <!-- Varicose Veins -->
+        <div class="item active">
+          <div class="carousel__item carousel-item">
+            <div class="carousel-item__img image--cover"
+                 style="background-image: url('<%= image_url 'treatments/laser/hair/Prowave_BA_2_Combined_sm.jpg' %>')">
             </div>
-          </div>
-          <!-- Introducing: Laser Treatments -->
-          <div class="item">
-            <div class="carousel-item">
-              <div class="carousel-item__left">
-                <div class="carousel-item__left-inner">
-                  <h3 class="carousel-item__header text--center  text--times">
-                    <span class="text--times text--bold">Introducing:</span>
-                    <br/>
-                    <i>laser treatments</i>
-                  </h3>
-                  <br/>
-                  <br/>
-                  <p class="carousel-item__text text-center text--times text--md">
-                    We host a suite of highly advanced laser equipment giving us the ability to perform a variety of
-                    modern treatments:
-                  </p>
-                  <br/>
-                  <br/>
-                  <p class="carousel-item__text text--lg text--center text--bold text--clear">
-                    Hair removal,
-                    <br/>
-                    Spider & Varicose vein removal,
-                    <br/>
-                    Skin pigment correction
-                    <br/>
-                    & <b class="text--emph">MORE!</b>
-                  </p>
-                </div>
-              </div>
-              <img class="carousel-item__img" src="<%= image_url 'carousel/laser-stock.jpg' %>" alt="Introducing: Laser Treatments!">
+            <div class="carousel-item__overlay">
+              <br/>
+              <p class="carousel-item__text text--clear text--center text--md">
+                At Skin on Forty Five we offer cutting edge techniques for
+              </p>
+              <h3 class="carousel-item__header text--center text--clear text--bold">
+                Laser hair removal
+              </h3>
+              <br/>
+              <p class="carousel-item__text text--cursive text--center text--md">
+                Remove unwanted hair, reveal beautiful, smooth skin
+              </p>
             </div>
           </div>
         </div>
-        <!-- Navigation controls -->
-        <a class="left carousel-control" href="#treatments-carousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#treatments-carousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <!-- Introducing: Laser Treatments -->
+        <div class="item">
+          <div class="carousel__item carousel-item">
+            <div class="carousel-item__img image--cover elem__hide--md elem__hide--lg elem__hide--xl"
+                 style="background-image: url('<%= image_url 'treatments/laser/veins/xeo_NdYAG-veins_1.jpg' %>')">
+            </div>
+            <div class="carousel-item__img elem__hide--xs elem__hide--sm"
+                 style="background-image: url('<%= image_url 'treatments/laser/veins/xeo_NdYAG-veins_1.jpg' %>')">
+            </div>
+            <div class="carousel-item__overlay">
+              <br/>
+              <br/>
+              <h3 class="carousel-item__header text--center text--clear text--bold">
+                Renew confidence <br/> in your skin
+              </h3>
+              <br/>
+              <p class="carousel-item__text text--cursive text--center text--md">
+                with Skin on Forty Five's extensive vascular treatments
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Navigation controls -->
+      <a class="left carousel__control carousel-control" href="#treatments-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel__control carousel-control" href="#treatments-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 

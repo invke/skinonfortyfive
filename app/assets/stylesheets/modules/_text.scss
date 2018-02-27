@@ -141,3 +141,11 @@ h6 {
 .text--clear {
   font-family: $text__family--clear !important;;
 }
+
+.text--shadow-light {
+  text-shadow: 2px 2px 15px white;
+}
+
+.text--shadow-dark {
+  text-shadow: 2px 2px 15px black;
+}

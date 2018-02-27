@@ -3,15 +3,10 @@
 
 $section__taranaki--height: 400px;
 
-$carousel__width--xl: 700px;
 $carousel__height--xl: 500px;
-$carousel__width--lg: 600px;
 $carousel__height--lg: 500px;
-$carousel__width--md: 500px;
 $carousel__height--md: 400px;
-$carousel__width--sm: 500px;
 $carousel__height--sm: 400px;
-$carousel__width--xs: 500px;
 $carousel__height--xs: 400px;
 
 $carousel__img-width--xl: 700px;
@@ -72,15 +67,15 @@ $carousel__img-width--xl: 700px;
   }
 }
 
-.treatments-carousel {
+.carousel.treatments-carousel {
   width: 100%;
-  height: $carousel__height--xl;
+  height: $carousel__height--xl !important;
   @media (max-width: $size__width--xl - 1px) {
-    height: $carousel__height--lg;
-  }
+    height: $carousel__height--lg !important;;
+  };
   @media (max-width: $size__width--lg - 1px) {
     width: 100%;
-    height: auto;
+    height: $carousel__height--md !important;;
     border-left: none;
     margin-top: 15px;
   }
